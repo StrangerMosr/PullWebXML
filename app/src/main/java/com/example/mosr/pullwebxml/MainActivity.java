@@ -20,6 +20,11 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 
+/**
+ * @Author Scw
+ * @Email intimatestranger@sina.cn
+ * @CreateTime 2016/7/4 11:49
+ */
 public class MainActivity extends AppCompatActivity {
     private static String url = "http://ws.webxml.com.cn/WebServices/WeatherWebService.asmx/getWeatherbyCityName";
     private static String parameter = "theCityName";
