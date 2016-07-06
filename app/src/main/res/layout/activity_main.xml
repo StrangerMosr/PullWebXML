@@ -8,22 +8,34 @@
     android:layout_height="match_parent"
     tools:context="com.example.mosr.pullwebxml.MainActivity">
 
-    <Button
-        android:text="Button"
-        android:layout_width="90dp"
-        android:layout_height="50dp"
-        tools:layout_editor_absoluteX="152dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/button1"
-        android:layout_marginTop="16dp" />
 
     <TextView
         android:id="@+id/mtv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
-        android:text="Hello World!"
-        android:layout_below="@id/button1"/>
+        android:scrollbarFadeDuration="2000"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:text="MethodOne" />
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mtv"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:text="MethodTwo" />
 
 </RelativeLayout>
